@@ -1,0 +1,79 @@
+.faq-section {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.faq-headline {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faq-card {
+  width: calc(33.33% - 24px);
+  height: 30rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+
+.faq-card.flipped > *:first-child {
+  transform: rotateY(180deg);
+}
+
+.faq-card.flipped > *:last-child {
+  transform: rotateY(0deg);
+}
+
+.faq-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+
+.faq-card-content {
+  position: relative;
+  height: auto;
+  padding: 32px;
+  /*overflow-wrap: anywhere;*/
+}
+
+.faq-card-footer {
+  padding: 2rem;
+  border-top: solid thin rgba(0, 0, 0, 0);
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+}
+
+.faq-card-button {
+  padding: 0.75rem 1.25rem;
+  color: white;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+
+.faq-card .faq-card-inner {
+  position: absolute;
+  border-radius: 3rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.faq-card > .faq-card-front {
+  z-index: 10;
+}
+
+.faq-card > .faq-card-back {
+  transform: rotateY(-180deg);
+}
+
+.faq-back .faq-card-content {
+  margin-top: auto;
+}
