@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 
 class Quiz extends React.Component {
   state = {
@@ -74,10 +73,10 @@ class Quiz extends React.Component {
       }
 
       return (
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <p class="success-error">{result}</p>
-            <button class="eligibility__button" onClick={this.handleRetake}>
+        <div id="myModal" className="modal">
+          <div className="modal-content">
+            <p className="success-error">{result}</p>
+            <button className="eligibility__button" onClick={this.handleRetake}>
               Retake the quiz
             </button>
           </div>
@@ -87,12 +86,12 @@ class Quiz extends React.Component {
 
     return (
       <div>
-        <button id="myBtn" class="eligibility__button" onClick={this.openModal}>
+        <button id="myBtn" className="eligibility__button" onClick={this.openModal}>
           Take the eligibility quiz
         </button>
         {this.state.isModalOpen && (
-          <div id="myModal" class="modal">
-            <span class="close" onClick={this.handleRetake}>
+          <div id="myModal" className="modal">
+            <span className="close" onClick={this.handleRetake}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -103,15 +102,15 @@ class Quiz extends React.Component {
                 <path d="M0 0h24v24H0z" fill="none" />
               </svg>
             </span>
-            <div class="modal-content">
-              <h2 class="question question-animation">
+            <div className="modal-content">
+              <h2 className="question question-animation">
                 {this.questions[this.state.currentQuestion].text}
               </h2>
-              <div class="button-group">
+              <div className="button-group">
                 {this.questions[this.state.currentQuestion].options.map(
                   (option, index) => (
                     <button
-                      class="eligibility__button--secondary"
+                      className="eligibility__button--secondary"
                       key={index}
                       onClick={() => this.handleOptionClick(index)}
                     >
@@ -128,4 +127,4 @@ class Quiz extends React.Component {
   }
 }
 
-ReactDOM.render(<Quiz />, document.getElementById("quiz"));
+export default Quiz;

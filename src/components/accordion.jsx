@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import { useState } from "react";
 
 const steps = [
   {
@@ -38,7 +37,7 @@ const Accordion = ({ title, children }) => {
 
   return (
     <div className="accordion-container">
-      {children.map((step, index) => (
+      {steps.map((step, index) => (
         <div
           key={index}
           className={`accordion-item ${activeIndex === index ? "active" : ""}`}
@@ -71,7 +70,7 @@ const Accordion = ({ title, children }) => {
               )}
             </div>
           </div>
-          <div class="accordion-divider"></div>
+          <div className="accordion-divider"></div>
           
             <div className="accordion-content">{step.content}</div>
       
@@ -82,4 +81,4 @@ const Accordion = ({ title, children }) => {
 };
 
 
-ReactDOM.render(<Accordion children={steps} />, document.getElementById("accordion"));
+export default Accordion;

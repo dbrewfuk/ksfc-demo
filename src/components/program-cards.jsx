@@ -1,19 +1,11 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
-import "./style.css";
-import "./components/base.css";
-import "./components/accordion.css";
-import "./components/faq.css";
-import { programs } from "./data.js";
-import Quiz from "./components/quiz.js";
-import Accordion from "./components/accordion.js";
-import Faq from "./components/faq.js";
+import { programs } from "../assets/data.js";
 
 
 
@@ -57,7 +49,7 @@ const AcademicProgramsCard = () => {
     setOpen(false);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     setFilteredPrograms(
       programs.filter(
         (program) =>
@@ -74,10 +66,20 @@ const AcademicProgramsCard = () => {
     );
   }, [filter, programs]);
 
+    useEffect(() => {
+    fetch("https://wrky-api.kctcsweb.com/api/programs/search")
+      .then((res) => res.json())
+      .then((res) => {
+      console.log(res);
+      // setFilteredPrograms(res.json().data);
+    });
+  }, []);
+
+
   return (
     <>
       <form>
-        <div class="ap-filters-list">
+        <div className="ap-filters-list">
           <Box sx={{ minWidth: 220 }}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">College</InputLabel>
@@ -140,7 +142,7 @@ const AcademicProgramsCard = () => {
             </FormControl>
           </Box>
         </div>
-        <div class="clear-filter-wrapper">
+        <div className="clear-filter-wrapper">
           <Box sx={{}}>
             {isFilterApplied() && (
               <Button variant="outlined" onClick={handleClearAll}>
@@ -153,9 +155,9 @@ const AcademicProgramsCard = () => {
 
       <br />
 
-      <div class="ap-card-list">
+      <div className="ap-card-list">
         {filteredPrograms.map((program) => (
-          <div class="ap-card" key={program.id}>
+          <div className="ap-card" key={program.id}>
             <h3>{program.program}</h3>
             <p>College: {program.college}</p>
             <p>Academic Area: {program.academicArea}</p>
@@ -172,4 +174,4 @@ const AcademicProgramsCard = () => {
   );
 };
 
-ReactDOM.render(<AcademicProgramsCard />, document.getElementById("root"));
+export default AcademicProgramsCard;

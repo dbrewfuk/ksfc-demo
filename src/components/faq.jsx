@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import { useState } from "react";
 
 const FaqCard = ({ question, answer }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -7,7 +6,7 @@ const FaqCard = ({ question, answer }) => {
   return (
     <div 
     className={`faq-card ${isFlipped && "flipped"}`} 
-    tabindex={0}
+    tabIndex={0}
     onKeyDown={e => {
       if (e.key === "Enter" || e.key === " ") {
         setIsFlipped(!isFlipped);
@@ -20,7 +19,7 @@ const FaqCard = ({ question, answer }) => {
         <p>{question}</p>
         
         </div>
-        <button className="faq-card-button" aria-expanded={isFlipped} tabindex="0" role="button" onClick={() => setIsFlipped(!isFlipped)} onKeyDown={e => {
+        <button className="faq-card-button" aria-expanded={isFlipped} tabIndex="0" role="button" onClick={() => setIsFlipped(!isFlipped)} onKeyDown={e => {
     if (e.key === "Enter" || e.key === " ") {
       setIsFlipped(!isFlipped);
     }
@@ -33,7 +32,7 @@ const FaqCard = ({ question, answer }) => {
         <div className="faq-card-content">    
         <p>{answer}</p>
         </div>
-        <button className="faq-card-button" aria-expanded={isFlipped} tabindex="0"  role="button" onClick={() => setIsFlipped(!isFlipped)} onKeyDown={e => {
+        <button className="faq-card-button" aria-expanded={isFlipped} tabIndex="0"  role="button" onClick={() => setIsFlipped(!isFlipped)} onKeyDown={e => {
     if (e.key === "Enter" || e.key === " ") {
       setIsFlipped(!isFlipped);
     }
@@ -95,4 +94,4 @@ const Faq = () => {
   return <FaqSection faqList={faqList} />;
 };
 
-ReactDOM.render(<Faq />, document.getElementById("faq"));
+export default Faq;

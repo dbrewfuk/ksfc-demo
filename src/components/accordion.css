@@ -2,6 +2,10 @@
   margin-bottom: 48px;
 }
 
+.accordion-container {
+  margin-bottom: 48px;
+}
+
 .accordion-item {
   transition: ease all 0.3s;
 }
