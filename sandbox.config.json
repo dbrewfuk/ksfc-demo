@@ -1,0 +1,6 @@
+{
+  "security": {
+    "sandboxedIframes": true,
+    "allowedExternalScripts": ["https://codesandbox.io"]
+  }
+}

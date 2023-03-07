@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "destroyregular";
+  src: url("/src/assets/fonts/destroy-webfont.woff2") format("woff2"),
+    url("/src/assets/fonts/destroy-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --c-primary: #00467f;
+  --c-secondary: #007bdf;
+  --c-accent: #f0bd4c;
+
+  --c-neutral-0: #ffffff;
+  --c-neutral-05: #fefefe;
+  --c-neutral-1: #fefefe;
+  --c-neutral-1.5: #fdfdfd;
+  --c-neutral-2: #fcfcfc;
+  --c-neutral-3: #fafafa;
+  --c-neutral-4: #f6f6f6;
+  --c-neutral-5: #e5e5e5;
+  --c-neutral-6: #e4e4e4;
+  --c-neutral-7: #cdcdcd;
+  --c-neutral-8: #999999;
+  --c-neutral-9: #464646;
+  --c-neutral-10: #000000;
+
+  --tf1: Work Sans, Arial, Sans-serif;
+  --tf2: Georgia, Times New Roman, Serif;
+  --tf3: destroyregular, sans-serif;
+
+  --f1: 12px;
+  --f2: 16px;
+  --f3: 20px;
+  --f4: 25px;
+  --f5: 32px;
+  --f6: 48px;
+  --f7: 65px;
+  --f8: 96px;
+
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 16px;
+  --s4: 24px;
+  --s5: 32px;
+  --s6: 64px;
+  --s7: 96px;
+  --s8: 128px;
+  --s9: 256px;
+
+  --br: 2rem;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--tf1);
+  color: var(--c-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 64px 0;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.section__headline {
+  font-family: var(--tf3);
+  font-size: var(--f6);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+@media screen and (min-width: 420px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+
+@media screen and (min-width: 720px) {
+}
+
+@media screen and (min-width: 1024px) {
+}
