@@ -1,0 +1,162 @@
+[
+  {
+    "college": "Ashland Community & Technical College",
+    "name": "Jason Salyers",
+    "email": "jason.salyers@kctcs.edu",
+    "phone": "606-326-2264"
+  },
+  {
+    "college": "Big Sandy Community & Technical College",
+    "name": "Carla Branham",
+    "email": "cbranham0022@kctcs.edu",
+    "phone": "606-889-4715"
+  },
+  {
+    "college": "Bluegrass Community & Technical College",
+    "name": "Clovis C. Perry, Jr.",
+    "email": "clovis.perry@kctcs.edu",
+    "phone": "859-246-6867"
+  },
+  {
+    "college": "Campbellsville University",
+    "name": "Robyn Sollberger",
+    "email": "rlsollberger@campbellsville.edu",
+    "phone": "270-789-5305"
+  },
+  {
+    "college": "Eastern KY University",
+    "name": "Sara Hammons",
+    "email": "sara.hammons@eku.edu"
+  },
+  {
+    "college": "Elizabethtown Community & Technical College",
+    "name": "Chrissie Angell",
+    "email": "chrissie.angell@kctcs.edu",
+    "phone": "270-706-8698"
+  },
+  {
+    "college": "Galen College of Nursing",
+    "name": "Theresa Eiler",
+    "email": "teiler@galencollege.edu",
+    "phone": "502-429-3300"
+  },
+  {
+    "college": "Gateway Community & Technical College",
+    "name": "Andre Washington",
+    "email": "andre.washington@kctcs.edu",
+    "phone": "859-442-4176"
+  },
+  {
+    "college": "Hazard Community & Technical College",
+    "name": "Scott Gross",
+    "email": "scott.gross@kctcs.edu",
+    "phone": "606-487-3293"
+  },
+  {
+    "college": "Henderson Community College",
+    "name": "Chad Phillips",
+    "email": "chad.phillips@kctcs.edu",
+    "phone": "270-831-9614"
+  },
+  {
+    "college": "Hopkinsville Community College",
+    "name": "Angel Prescott",
+    "email": "HPStudentAffairs@kctcs.edu",
+    "phone": ""
+  },
+  {
+    "college": "Jefferson Community & Technical College",
+    "name": "Work Ready Office",
+    "email": "jf-workready@kctcs.edu",
+    "phone": "502-213-5333"
+  },
+  {
+    "college": "Madisonville Community College",
+    "name": "Sakara Bruce",
+    "email": "Sakara.bruce@kctcs.edu",
+    "phone": "270-824-8624"
+  },
+  {
+    "college": "Maysville Community & Technical College",
+    "name": "Jessica Sorrell",
+    "email": "jessica.sorrell@kctcs.edu",
+    "phone": "606-759-7141 ext 66309"
+  },
+  {
+    "college": "Med Quest College",
+    "name": "Robin Boughey",
+    "email": "rboughey@medquestcollege.edu",
+    "phone": "859-402-1035"
+  },
+  {
+    "college": "Medical Career & Technical College",
+    "email": "abertrand@medicalcareerandtechnicalcollege.edu",
+    "phone": "859-624-1988"
+  },
+  {
+    "college": "Northern Kentucky University",
+    "name": "Trenee Johnson",
+    "email": "johnsont35@nku.edu",
+    "phone": "859-572-6435"
+  },
+  {
+    "college": "Owensboro Community & Technical College",
+    "name": "Rosa Gogel",
+    "email": "rosa.gogel@kctcs.edu",
+    "phone": "270-686-4467"
+  },
+  {
+    "college": "Somerset Community College",
+    "name": "Patrick Mayer",
+    "email": "patrick.mayer@kctcs.edu",
+    "phone": "606-451-6702"
+  },
+  {
+    "college": "Southcentral Community & Technical College",
+    "name": "Amanda Tinsley",
+    "email": "amanda.tinsley@kctcs.edu",
+    "phone": "270-901-1168"
+  },
+  {
+    "college": "Southeast Community & Technical College",
+    "name": "Anna Stewart",
+    "email": "astewart0133@kctcs.edu",
+    "phone": "606-248-2064"
+  },
+  {
+    "college": "Sullivan University",
+    "name": "Katelyn Stinson",
+    "email": "mkstinson@sullivan.edu",
+    "phone": "502-413-8542"
+  },
+  {
+    "college": "University of Kentucky",
+    "name": "Michia Brangers",
+    "email": "michia.brangers@uky.edu",
+    "phone": "859-562-2446"
+  },
+  {
+    "college": "University of Louisville",
+    "name": "UofL Student Financial Aid Office",
+    "email": "schsps@louisville.edu",
+    "phone": "502-852-5511"
+  },
+  {
+    "college": "University of the Cumberland",
+    "name": "Tim Noe",
+    "email": "timothy.noe@ucumberlands.edu",
+    "phone": "606-539-4496"
+  },
+  {
+    "college": "West Kentucky Community & Technical College",
+    "name": "Trent Johnson",
+    "email": "trent.johnson@kctcs.edu",
+    "phone": "270-534-3302"
+  },
+  {
+    "college": "Western Kentucky University",
+    "name": "Kristie Hughes",
+    "email": "kristie.hughes@wku.edu",
+    "phone": "270-745-8951"
+  }
+]

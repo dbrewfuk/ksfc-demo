@@ -1,0 +1,93 @@
+.eligibility {
+}
+
+.eligibility__wrapper {
+  text-align: center;
+}
+
+.eligibility__copy {
+  font-size: var(--f5);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.eligibility__button {
+  display: inline-block;
+  padding: 16px 32px;
+  border: solid 2px var(--c-primary);
+  border-radius: 100vw;
+  cursor: pointer;
+  background: var(--c-primary);
+  color: var(--c-neutral-0);
+}
+
+.eligibility__button--secondary {
+  display: inline-block;
+  padding: 16px 32px;
+  border: solid 2px var(--c-primary);
+  border-radius: 100vw;
+  cursor: pointer;
+  background: var(--c-neutral-50);
+  color: var(--c-primary);
+}
+
+#myModal {
+  padding: 96px;
+  border: #e0e0e0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  margin: 96px;
+}
+
+.modal {
+  opacity: 1;
+  text-align: center;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.question {
+  font-size: var(--f5);
+  margin-bottom: 32px;
+}
+
+.success-error {
+  font-size: var(--f5);
+  margin-bottom: 32px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 32px;
+  outline: 0;
+  border: solid 1px;
+  font-size: var(--f2);
+  border-radius: 100vw;
+  background: var(--c-primary);
+  cursor: pointer;
+}
+
+.modal-animation-enter {
+  opacity: 0;
+}
+
+.modal-animation-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.modal-animation-exit {
+  opacity: 1;
+}
+
+.modal-animation-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
