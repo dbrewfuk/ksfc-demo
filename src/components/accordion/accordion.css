@@ -13,6 +13,7 @@
 .accordion-title {
   font-size: var(--f5);
   transition: ease all 0.3s;
+  margin-bottom: 0;
 }
 
 .accordion-item:hover .accordion-title {

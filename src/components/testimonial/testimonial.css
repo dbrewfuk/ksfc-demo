@@ -25,6 +25,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: var(--br);
 }
 
 .pull-quote {
@@ -34,11 +35,11 @@
 }
 
 .pull-quote__qm {
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 
 .pull-quote__content {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   color: var(--c-neutral-0);
 }
 
@@ -55,12 +56,12 @@ cite {
   font-style: normal;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 480px) {
   .pull-quote__content {
     font-size: var(--f6);
   }
   cite {
-    font-size: var(--f4);
+    font-size: var(--f3);
   }
   .video-container {
     padding-bottom: 56.25%;

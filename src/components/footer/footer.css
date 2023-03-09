@@ -1,5 +1,5 @@
 .footer {
-  padding: 128px 0;
+  padding: 96px 0;
 }
 
 .footer__wrapper {
@@ -19,7 +19,7 @@
 
 .footer__headline {
   font-family: var(--tf3);
-  font-size: var(--f7);
+  font-size: var(--f6);
   margin-bottom: 24px;
 }
 
@@ -34,13 +34,13 @@
   border: solid 1px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 480px) {
   .footer__wrapper {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 480px) {
   .footer__headline {
     font-size: var(--f7);
   }

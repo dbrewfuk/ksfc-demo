@@ -25,7 +25,7 @@
   --c-neutral-9: #464646;
   --c-neutral-10: #000000;
 
-  --tf1: Work Sans, Arial, Sans-serif;
+  --tf1: Roboto, Arial, Sans-serif;
   --tf2: Georgia, Times New Roman, Serif;
   --tf3: destroyregular, sans-serif;
 
@@ -48,9 +48,18 @@
   --s8: 128px;
   --s9: 256px;
 
-  --br: 2rem;
-}
+  --br-0: 0;
+  --br-1: 0.5rem;
+  --br-2: 1rem;
+  --br-3: 2rem;
+  --br-100: 100vw;
+  --br: var(--br-3);
 
+  --lvl-1: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -70,9 +79,27 @@ blockquote {
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .section {
-  padding: 64px 0;
+  padding: 48px 0;
   border-bottom: solid 1px #e0e0e0;
+}
+
+.section.section--short {
+  padding: 48px 0;
+}
+
+.section.section--medium {
+  padding: 64px 0;
+}
+
+@media (min-width: 720px) {
+  .section {
+    padding: 96px 0;
+  }
 }
 
 .section__headline {
@@ -85,13 +112,7 @@ blockquote {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 32px;
-}
-
-@media screen and (min-width: 420px) {
-  .section {
-    padding: 96px 0;
-  }
+  padding: 0 32px;
 }
 
 @media screen and (min-width: 720px) {

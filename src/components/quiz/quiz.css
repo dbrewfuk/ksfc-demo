@@ -31,17 +31,19 @@
   color: var(--c-primary);
 }
 
-#myModal {
-  padding: 96px;
+.quiz {
+  opacity: 1;
+  text-align: center;
+  padding: 48px;
   border: #e0e0e0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 50px;
-  margin: 96px;
 }
 
-.modal {
-  opacity: 1;
-  text-align: center;
+@media screen and (min-width: 480px) {
+  .quiz {
+    padding: 96px;
+  }
 }
 
 .close {

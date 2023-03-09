@@ -15,6 +15,7 @@ import "./components/marquee/marquee.css";
 import "./components/program-finder/program-finder.css";
 import "./components/quiz/quiz.css";
 import "./components/testimonial/testimonial.css";
+import "./components/form/form.css";
 
 ReactDOM.render(React.createElement(Quiz), document.getElementById("quiz"));
 

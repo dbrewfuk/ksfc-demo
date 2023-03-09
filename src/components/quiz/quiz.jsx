@@ -73,12 +73,16 @@ class Quiz extends React.Component {
       }
 
       return (
-        <div id="myModal" className="modal">
-          <div className="modal-content">
+        <div className="quiz">
+          <div className="quiz__content">
             <p className="success-error">{result}</p>
-            <button className="eligibility__button" onClick={this.handleRetake}>
-              Retake the quiz
-            </button>
+            <a
+              className="eligibility__button"
+              href="#explore"
+              title="eligibile programs"
+            >
+              Explore Programs
+            </a>
           </div>
         </div>
       );
@@ -94,8 +98,8 @@ class Quiz extends React.Component {
           Take the Eligibility Quiz
         </button>
         {this.state.isModalOpen && (
-          <div id="myModal" className="modal">
-            <div className="modal-content">
+          <div className="quiz">
+            <div className="quiz__content">
               <h2 className="question question-animation">
                 {this.questions[this.state.currentQuestion].text}
               </h2>

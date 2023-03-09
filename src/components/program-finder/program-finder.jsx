@@ -68,6 +68,19 @@ function ProgramFinder() {
     console.log(`Clicked program: ${programName}`);
   };
 
+  const handleDrawerToggle = (programId) => {
+    drawerToggle(programId);
+  };
+
+  const drawerToggle = (programId) => {
+    const element = document.querySelector(
+      `.program-card__drawer[data-program-id="${programId}"]`
+    );
+    if (element) {
+      element.classList.toggle("expanded");
+    }
+  };
+
   // Fetch initial programs on mount and when college or program sector changes
   useEffect(() => {
     const fetchInitialPrograms = async () => {
@@ -108,7 +121,7 @@ function ProgramFinder() {
 
   return (
     <>
-      <Box sx={{ minWidth: 220, marginBottom: 6 }}>
+      <Box sx={{ minWidth: 220, marginBottom: 2 }}>
         <FormControl fullWidth>
           <InputLabel id="college-select-label">Select a College</InputLabel>
           <Select
@@ -156,35 +169,58 @@ function ProgramFinder() {
           </FormControl>
         </Box>
       )}
-
-      {programs.map((program) => (
-        <div key={program.id} className="ap-card">
-          <h3 onClick={() => handleProgramClick(program.program)}>
-            {program.program}
-          </h3>
-
-          <p>{program.credential}</p>
-          {contacts.map((contact) => {
-            if (contact.college === program.college) {
-              return (
-                <div key={contact.id}>
-                  <p>{contact.name}</p>
-                  <p>{contact.email}</p>
-                  <p>{contact.phone}</p>
+      <div class="program-cards__list">
+        {programs.map((program) => (
+          <div key={program.id} className="program-card">
+            <h3
+              className="program-card__title"
+              onClick={() => handleProgramClick(program.program)}
+            >
+              {program.program}
+            </h3>
+            <div class="program-card__chips">
+              <span className="program-card__chip">{program.college}</span>
+              <span className="program-card__chip">{program.credential}</span>
+            </div>
+            <div className="program-card__footer">
+              <div className="program-card__button-group">
+                <a className="program-card__button" href="#request-information">
+                  Request Information
+                </a>
+                <div
+                  className="program-card__button--secondary"
+                  onClick={() => handleDrawerToggle(program.id)}
+                >
+                  Contact
                 </div>
-              );
-            } else {
-              return null;
-            }
-          })}
-        </div>
-      ))}
+              </div>
+              {contacts.map((contact) => {
+                if (contact.college === program.college) {
+                  return (
+                    <div
+                      className="program-card__drawer"
+                      data-program-id={program.id}
+                      key={contact.id}
+                    >
+                      <p>{contact.name}</p>
+                      <p>{contact.email}</p>
+                      <p>{contact.phone}</p>
+                    </div>
+                  );
+                } else {
+                  return null;
+                }
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
 
       {programs.length > 0 && (
         <Box sx={{ display: "flex", justifyContent: "center", marginTop: 4 }}>
-          <Button variant="outlined" onClick={handleLoadMore}>
+          <div className="load-more-button" onClick={handleLoadMore}>
             Load More
-          </Button>
+          </div>
         </Box>
       )}
     </>

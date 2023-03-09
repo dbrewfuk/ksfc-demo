@@ -1,11 +1,12 @@
 .key-figure__container {
-  display: flex;
+  display: grid;
   flex-direction: column;
+  grid-template-columns: repeat(1, 1fr);
   gap: 32px;
+  margin-bottom: 96px;
 }
 
 .key-figure__card {
-  flex: 0 1 33.333%;
   text-align: center;
 }
 
@@ -34,17 +35,22 @@
   font-size: var(--f3);
 }
 
-@media screen and (min-width: 420px) {
+@media (min-width: 480px) {
   .key-figure__card__title {
     font-size: var(--f7);
   }
 
   .key-figure__container {
     flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width: 720px) {
+  .key-figure__container {
+    gap: 64px;
+    margin-bottom: 128px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
