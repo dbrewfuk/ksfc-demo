@@ -21,6 +21,7 @@
   color: var(--c-neutral-0);
   transition: ease all 0.3s;
   border: solid 2px var(--c-primary);
+  font-weight: 500;
 }
 
 .eligibility__button:hover {
@@ -36,6 +37,7 @@
   cursor: pointer;
   background: var(--c-neutral-50);
   color: var(--c-primary);
+  font-weight:500;
 }
 
 .eligibility__button--secondary:hover {

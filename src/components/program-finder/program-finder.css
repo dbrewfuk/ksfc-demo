@@ -110,6 +110,7 @@
   cursor: pointer;
   transition: ease all 0.3s;
   border: solid 2px var(--c-primary);
+  font-weight: 500;
 }
 
 .program-card__button:hover {
@@ -126,6 +127,14 @@
   display: inline-block;
   font-size: var(--f2);
   cursor: pointer;
+  font-weight:500;
+  transition:ease all 0.3s;
+
+}
+
+.program-card__button--secondary:hover {
+  background: var(--c-primary);
+  color: var(--c-neutral-1);
 }
 
 .program-card__drawer {

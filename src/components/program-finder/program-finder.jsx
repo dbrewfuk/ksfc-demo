@@ -190,10 +190,31 @@ function ProgramFinder() {
                 <a className="program-card__button" href="#request-information">
                   Request Information
                 </a>
-               
+                <div
+                  className="program-card__button--secondary"
+                  onClick={() => handleDrawerToggle(program.id)}
+                >
+                  Contact
+                </div>
               </div>
              
-             
+              {contacts.map((contact) => {
+                if (contact.college === program.college) {
+                  return (
+                    <div
+                      className="program-card__drawer"
+                      data-program-id={program.id}
+                      key={contact.id}
+                    >
+                      <p>{contact.name}</p>
+                      <p>{contact.email}</p>
+                      <p>{contact.phone}</p>
+                    </div>
+                  );
+                } else {
+                  return null;
+                }
+              })}
           
             </div>
           </div>

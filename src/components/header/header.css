@@ -19,7 +19,7 @@
 .header__left {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 64px;
   align-items: center;
 }
 
@@ -45,6 +45,7 @@
   transition: ease all .3s;
   padding-bottom: 4px;
   font-size: var(--f3);
+  font-weight: 500;
 }
 
 .header__nav__link:hover {
@@ -73,6 +74,7 @@
   text-align: center;
   border: solid 2px;
   transition: ease all 0.3s;
+  font-weight: 500;
 }
 
 .header__cta__button--secondary {
@@ -80,6 +82,7 @@
   border: solid 2px;
   color: var(--c-primary);
   border: solid 2px;
+  font-weight: 500;
 }
 
 .header__cta__button:hover {
