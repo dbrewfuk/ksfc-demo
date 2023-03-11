@@ -35,6 +35,8 @@
 }
 
 .faq-card-inner {
+  position: absolute;
+  border-radius: var(--br);
   display: grid;
   grid-template-rows: 2fr 1fr;
   align-items: center;
@@ -42,6 +44,10 @@
   height: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   background: white;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.5s;
+  border:  solid 1px rgba(0,0,0,0.15);
 }
 
 .faq-card-content {
@@ -67,20 +73,18 @@
 
 .faq-card-button {
   padding: 0.75rem 1.25rem;
-  color: white;
-  border-radius: 1.25rem;
-  text-align: center;
+  color: var(--c-primary);
+  background: transparent;
   border: 0;
+  border-radius: 100vw;
+  text-align: center;
+  transition: ease all 0.3s;
 }
 
-.faq-card .faq-card-inner {
-  position: absolute;
-  border-radius: var(--br);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transition: transform 0.5s;
-  border: solid 1px;
+.faq-card-button svg {
+  fill: var(--c-primary);
 }
+
 
 .faq-card > .faq-card-front {
   z-index: 10;

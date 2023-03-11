@@ -21,13 +21,6 @@
   overflow: hidden;
   user-select: none;
   gap: 48px;
-  mask-image: linear-gradient(
-    var(--mask-direction, to right),
-    hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 1) 20%,
-    hsl(0 0% 0% / 1) 80%,
-    hsl(0 0% 0% / 0)
-  );
 }
 
 .marquee__group {

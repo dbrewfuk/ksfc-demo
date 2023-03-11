@@ -29,13 +29,26 @@
   cursor: pointer;
   background: var(--c-primary);
   color: var(--c-neutral-0);
+  transition: ease all 0.3s;
+  border: solid 2px var(--c-primary);
+  font-weight: 500;
+}
+
+.hero__button:hover {
+  background: var(--c-neutral);
+  color: var(--c-primary);
 }
 
 .hero__button--secondary {
   display: inline-block;
   padding: 0 0 4px;
-  border-bottom: solid 2px;
   cursor: pointer;
+  transition: ease all 0.3s;
+  font-weight: 500;
+}
+
+.hero__button--secondary:hover {
+  border-bottom: solid 3px var(--c-primary);
 }
 
 .hero-left,

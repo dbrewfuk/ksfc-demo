@@ -121,7 +121,9 @@ function ProgramFinder() {
 
   return (
     <>
-      <Box sx={{ minWidth: 220, marginBottom: 2 }}>
+    <div className="program__filters">
+
+      <Box className="program__filter">
         <FormControl fullWidth>
           <InputLabel id="college-select-label">Select a College</InputLabel>
           <Select
@@ -132,7 +134,7 @@ function ProgramFinder() {
             onChange={handleCollegeChange}
           >
             <MenuItem value="">
-              <em>None</em>
+              All
             </MenuItem>
             {colleges.map((college) => (
               <MenuItem key={college} value={college}>
@@ -142,8 +144,8 @@ function ProgramFinder() {
           </Select>
         </FormControl>
       </Box>
-      {programSectors.length > 0 && (
-        <Box sx={{ marginBottom: 6 }}>
+      
+        <Box className="program__filter">
           <FormControl fullWidth>
             <InputLabel id="program-sector-select-label">
               Select a Program Sector
@@ -158,7 +160,7 @@ function ProgramFinder() {
               }
             >
               <MenuItem value="">
-                <em>None</em>
+                All
               </MenuItem>
               {programSectors.map((sector) => (
                 <MenuItem key={sector} value={sector}>
@@ -168,7 +170,8 @@ function ProgramFinder() {
             </Select>
           </FormControl>
         </Box>
-      )}
+      
+      </div>
       <div class="program-cards__list">
         {programs.map((program) => (
           <div key={program.id} className="program-card">
@@ -187,30 +190,11 @@ function ProgramFinder() {
                 <a className="program-card__button" href="#request-information">
                   Request Information
                 </a>
-                <div
-                  className="program-card__button--secondary"
-                  onClick={() => handleDrawerToggle(program.id)}
-                >
-                  Contact
-                </div>
+               
               </div>
-              {contacts.map((contact) => {
-                if (contact.college === program.college) {
-                  return (
-                    <div
-                      className="program-card__drawer"
-                      data-program-id={program.id}
-                      key={contact.id}
-                    >
-                      <p>{contact.name}</p>
-                      <p>{contact.email}</p>
-                      <p>{contact.phone}</p>
-                    </div>
-                  );
-                } else {
-                  return null;
-                }
-              })}
+             
+             
+          
             </div>
           </div>
         ))}
