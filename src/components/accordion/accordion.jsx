@@ -2,17 +2,17 @@ import { useState } from "react";
 
 const steps = [
   {
-    title: "Step 1. Research available scholarships",
+    title: "Step 1. The Work Ready Kentucky Scholarship is available to:",
     content:
       "Start by researching available scholarships that fit your background and goals. Look for scholarships offered by foundations, corporations, and government agencies. Make a list of potential scholarships and take note of the eligibility criteria, deadlines, and application requirements.",
   },
   {
-    title: "Step 2. Gather necessary information and documents",
+    title: "Step 2. Apply to the college or university of your choice.",
     content:
       "Before you start your scholarship application, make sure you have all the necessary information and documents ready. This may include transcripts, test scores, reference letters, and essays. If you need to request these documents from third parties, do it well in advance of the scholarship deadline.",
   },
   {
-    title: "Step 3. Read the instructions carefully",
+    title: "Step 3. Complete the FAFSA.",
     content:
       "Read the instructions for the scholarship application carefully to make sure you understand what is required. Pay attention to the format, word count, and submission guidelines. Make sure you follow the instructions to the letter to increase your chances of being selected.",
   },
@@ -22,7 +22,7 @@ const steps = [
       "Your personal statement is a key component of your scholarship application. This is your opportunity to showcase your accomplishments, skills, and goals. Write a well-structured essay that clearly states your case for why you deserve the scholarship. Make sure it's grammatically correct, free of typos, and makes a strong impression.",
   },
   {
-    title: "Step 5. Submit your application",
+    title: "Step 5. Apply for the Work Ready Scholarship",
     content:
       "Once you've completed your scholarship application, double-check that you've included all the required information and documents. Submit your application before the deadline and keep a copy for your records. After you've submitted your application, follow up with the scholarship organization to ensure that your application was received.",
   },
