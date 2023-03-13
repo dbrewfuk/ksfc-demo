@@ -10,19 +10,24 @@ class Quiz extends React.Component {
 
   questions = [
     {
-      text: "Are you currently enrolled in a full-time undergraduate program?",
+      text: "Are you a U.S. citizen or permanent resident?",
       options: ["Yes", "No"],
       answer: 0,
     },
     {
-      text: "Have you maintained a minimum GPA of 3.0 or higher?",
+      text: "Do you live in Kentucky?",
       options: ["Yes", "No"],
       answer: 0,
     },
     {
-      text: "Are you a citizen or permanent resident of the United States?",
+      text: "Do you have a high school diploma or GED, or are you enrolled in a GED  program?",
       options: ["Yes", "No"],
       answer: 0,
+    },
+    {
+      text: "Have you earned an associate degree or higher?",
+      options: ["Yes", "No"],
+      answer: 1,
     },
   ];
 
