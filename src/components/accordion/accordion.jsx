@@ -24,7 +24,8 @@ const steps = [
   {
     title: "Step 5. Apply for the Work Ready Scholarship",
     content:
-      ""
+    ""
+  }
 ];
 
 const Accordion = ({ title, children }) => {
