@@ -32,10 +32,10 @@
 .eligibility__button--secondary {
   display: inline-block;
   padding: 16px 32px;
-  border: solid 2px var(--c-primary);
+  border: solid 2px var(--c-neutral-4);
   border-radius: 100vw;
   cursor: pointer;
-  background: var(--c-neutral-50);
+  background: var(--c-neutral-4);
   color: var(--c-primary);
   font-weight:500;
 }
