@@ -3,7 +3,11 @@ import { useState } from "react";
 
 
 const steps = [
-
+{
+    title: "Step 1. The Work Ready Kentucky Scholarship is available to:",
+    content:
+      "<div><ol><li>Kentucky residents.</li><li>Kentucky residents.</li><li>Those with a high school diploma or students working on their GED.</li><li>Anyone without an associate degree or higher.</li></ol><p>The scholarship is not income or GPA based. No essay is required.</p></div>",
+  },
   {
     title: "Step 1. Apply to the college or university of your choice.",
     content:
