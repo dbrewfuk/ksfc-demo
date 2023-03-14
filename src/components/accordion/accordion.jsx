@@ -1,30 +1,23 @@
 import { useState } from "react";
 
+
+
 const steps = [
+
   {
-    title: "Step 1. The Work Ready Kentucky Scholarship is available to:",
+    title: "Step 1. Apply to the college or university of your choice.",
     content:
-      "",
+      "<ul class='list f3 ml0 pl0'><li><a href='https://students.kctcs.edu/psc/stdsaprd/EMPLOYEE/SA/c/COMMUNITY_ACCESS.K_OLA_LANDING_FL.GBL?&amp;'>Kentucky Community and Technical College System</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://www.campbellsville.edu/admission-and-aid/apply-now/'>Campbellsville University</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://admissions.eku.edu/apply'>Eastern Kentucky University</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://apply.galencollege.edu/'>Galen College of Nursing</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://medquestcollege.edu/apply-online.html'>MedQuest College</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://www.nku.edu/apply.html'>Northern Kentucky University</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://www.sullivan.edu/apply-online'>Sullivan University</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://www.ucumberlands.edu/apply'>University of the Cumberlands</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://www.uky.edu/admission/apply-uk'>University of Kentucky</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://acsapps.wku.edu/pls/prod/twbkwbis.P_GenMenu?name=wkumenu.P_AdmUnsecMnu'>Western Kentucky University</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://apply.louisville.edu/register/applynow'>University of Louisville</a></li><li><a class='dib mb3 link bb pb1 bw1 navy' href='https://medicalcareerandtechnicalcollege.edu/financial-aid/'>Medical Career and Technical College</a></li></ul>",
   },
   {
-    title: "Step 2. Apply to the college or university of your choice.",
+    title: "Step 2. Complete the FAFSA.",
     content:
-      "",
+      "<p class='accordion__paragraph'>Submit your application today!</p><a class='button button--primary' href='https://studentaid.gov/h/apply-for-aid/fafsa'>Apply</a>",
   },
   {
-    title: "Step 3. Complete the FAFSA.",
+    title: "Step 3. Apply for the Work Ready Scholarship",
     content:
-      "",
-  },
-  {
-    title: "Step 4. Write a strong personal statement",
-    content:
-      "",
-  },
-  {
-    title: "Step 5. Apply for the Work Ready Scholarship",
-    content:
-    ""
+    "<p class='accordion__paragraph'>Apply for the scholarship today. There's no essay or application fee!</p><a class='button button--primary' href='youtube.com'>Apply</a>"
   }
 ];
 
@@ -75,10 +68,14 @@ const Accordion = ({ title, children }) => {
           </div>
           <div className="accordion-divider"></div>
 
-          <div className="accordion-content">{step.content}</div>
+          <div className="accordion-content">
+          <div dangerouslySetInnerHTML={{__html: step.content}}/>
+          </div>
         </div>
       ))}
     </div>
+
+
   );
 };
 

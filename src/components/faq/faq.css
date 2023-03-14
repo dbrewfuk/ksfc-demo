@@ -2,6 +2,7 @@
   display: grid;
   gap: 32px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 @media (min-width: 480px) {
   .faq-section {
@@ -21,16 +22,16 @@
 }
 
 .faq-card {
-  height: 30rem;
+  min-height: 30rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
 }
 
-.faq-card.flipped > *:first-child {
+.faq-card.flipped > .faq-card-front {
   transform: rotateY(180deg);
 }
 
-.faq-card.flipped > *:last-child {
+.faq-card.flipped > .faq-card-back {
   transform: rotateY(0deg);
 }
 
@@ -59,8 +60,7 @@
 }
 
 .faq-card-content p {
-  height: 200px;
-  overflow: hidden;
+  padding: 48px 0;
 }
 
 .faq-card-footer {
@@ -79,6 +79,10 @@
   border-radius: 100vw;
   text-align: center;
   transition: ease all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .faq-card-button svg {
@@ -86,9 +90,6 @@
 }
 
 
-.faq-card > .faq-card-front {
-  z-index: 10;
-}
 
 .faq-card > .faq-card-back {
   transform: rotateY(-180deg);

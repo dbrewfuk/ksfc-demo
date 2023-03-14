@@ -21,7 +21,11 @@
 }
 
 .accordion-header {
-  align-items: center;
+  display: "flex";
+  justify-content: "space-between";
+  cursor: "pointer";
+  padding: "24px 0";
+  align-items: "center";
 }
 
 .accordion-divider {
@@ -40,10 +44,39 @@
   transition: ease all 0.3s;
 }
 
+.accordion-content .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-content .list a{
+  border-bottom: solid;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
 .accordion-item.active .accordion-content {
-  padding: 24px 0;
   height: auto;
   opacity: 1;
+  z-index: 1;
+}
+
+.accordion-content > div {
+  padding:48px;
+  background:var(--c-neutral-4);
+  margin-top:24px;
+  display:flex;
+  gap:32px;
+  flex-direction:column;
+}
+
+@media (min-width:480px){
+  .accordion-content > div {
+    flex-direction: row;
+    gap: 48px;
+    justify-content: space-between;
+  }
 }
 
 .accordion-item svg {
@@ -87,6 +120,11 @@
   display: none;
   padding: var(--s3) 0;
   font-size: var(--f3);
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
 }
 
 .steps__button-wrapper {
