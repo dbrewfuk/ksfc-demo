@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import "./faq.css";
 
 
 const FaqCard = ({ question, answer, children }) => {

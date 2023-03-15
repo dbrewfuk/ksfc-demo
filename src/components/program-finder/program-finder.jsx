@@ -7,6 +7,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import contacts from "/src/contacts";
+import "./program-finder.css";
 
 function ProgramFinder() {
   const [programs, setPrograms] = useState([]);

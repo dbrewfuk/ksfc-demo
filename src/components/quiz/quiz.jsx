@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./quiz.css";
 
 class Quiz extends React.Component {
   state = {

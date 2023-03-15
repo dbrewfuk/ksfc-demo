@@ -1,0 +1,13 @@
+.alert{
+	background:var(--c-accent);
+	padding: var(--s3) 0;
+}
+
+.alert__content {
+	text-align:center;
+}
+
+.alert__link {
+	border-bottom: solid 2px;
+	font-weight: 500;
+}

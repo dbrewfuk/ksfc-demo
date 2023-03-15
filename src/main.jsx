@@ -3,19 +3,16 @@ import ReactDOM from "react-dom";
 import Quiz from "./components/quiz/quiz.jsx";
 import Faq from "./components/faq/faq.jsx";
 import ProgramFinder from "./components/program-finder/program-finder.jsx";
-import Accordion from "./components/accordion/accordion.jsx";
+import Accordion from "./components/accordion/index.jsx";
 import "./components/base.css";
-import "./components/accordion/accordion.css";
-import "./components/faq/faq.css";
 import "./components/footer/footer.css";
 import "./components/header/header.css";
 import "./components/hero/hero.css";
 import "./components/key-figures/key-figures.css";
 import "./components/marquee/marquee.css";
-import "./components/program-finder/program-finder.css";
-import "./components/quiz/quiz.css";
 import "./components/testimonial/testimonial.css";
 import "./components/form/form.css";
+import "./components/alert/alert.css";
 
 ReactDOM.render(React.createElement(Quiz), document.getElementById("quiz"));
 
