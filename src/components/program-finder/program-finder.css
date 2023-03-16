@@ -2,6 +2,7 @@
   display: flex;
   gap: 24px;
   margin-bottom: 48px;
+  flex-direction: column;
 }
 
 .program__filter{
@@ -10,9 +11,13 @@
 
 
 
-@media screen and (min-width: 480px) {
+@media (min-width: 490px) {
+  .program__filters{
+    flex-direction: row;
+  }
   .program__filter{
   flex: 0 1 50%;
+
 }
 }
 

@@ -5,6 +5,7 @@
 
 .alert__content {
 	text-align:center;
+	line-height: var(--lh-paragraph);
 }
 
 .alert__link {

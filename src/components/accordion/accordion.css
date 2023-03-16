@@ -54,7 +54,10 @@
   border-bottom: solid;
   margin-bottom: 16px;
   display: inline-block;
+  font-size: var(--f3);
+  padding-bottom: var(--s2);
 }
+
 
 .accordion-item.active .accordion-content {
   height: auto;
@@ -77,6 +80,13 @@
     gap: 48px;
     justify-content: space-between;
   }
+  .accordion-content .list a{
+  border-bottom: solid;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-size: var(--f6);
+}
+
 }
 
 .accordion-item svg {
@@ -125,6 +135,10 @@
 .accordion__list {
   margin: 0;
   padding: 0;
+}
+
+#accordion .button {
+  width: auto;
 }
 
 .steps__button-wrapper {

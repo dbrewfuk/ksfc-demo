@@ -24,8 +24,14 @@
 .header__left {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 24px;
   align-items: center;
+}
+
+@media (min-width: 480px){
+  .header__left {
+    gap: 64px;
+  }
 }
 
 .header__right__wrapper {
