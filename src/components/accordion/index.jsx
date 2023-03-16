@@ -22,7 +22,7 @@ const steps = [
   {
     title: "Step 4. Apply for the Work Ready Scholarship",
     content:
-    "<p class='accordion__paragraph'>Apply for the scholarship today. There's no essay or application fee!</p><a class='button button--primary' href='youtube.com'>Apply</a>"
+    "<p class='accordion__paragraph'>Apply for the scholarship today. There's no essay or application fee!</p><a class='button button--primary' href='https://www.kheaa.com/website/kheaa/work_ready?main=1'>Apply</a>"
   }
 ];
 
