@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Quiz from "./components/quiz/quiz.jsx";
 import Faq from "./components/faq/faq.jsx";
 import ProgramFinder from "./components/program-finder/program-finder.jsx";
-import Accordion from "./components/accordion/index.jsx";
+import Accordion from "./components/accordion/accordion.jsx";
 import "./components/base.css";
 import "./components/footer/footer.css";
 import "./components/header/header.css";

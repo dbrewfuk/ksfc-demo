@@ -4,11 +4,11 @@
 }
 .header__logo {
   width: auto;
-  height: 64px;
+  height: 80px;
 }
 @media (min-width:480px){
   .header__logo {
-    height: 80px;
+    height: 96px;
   }
 }
 .header__wrapper {
