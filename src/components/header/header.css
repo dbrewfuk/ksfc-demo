@@ -16,7 +16,7 @@
   grid-template-columns: repeat(1, 1fr);
   justify-content: space-between;
   padding: 24px 32px;
-  flex-wrap: wrap;
+  flex-wrap: wrap;   
   gap: 32px;
   align-items: center;
 }
@@ -24,7 +24,7 @@
 .header__left {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 24px;   
   align-items: center;
 }
 
@@ -32,8 +32,8 @@
   .header__left {
     gap: 64px;
   }
-}
-
+}        
+         
 .header__right__wrapper {
   display: flex;
   justify-content: flex-end;

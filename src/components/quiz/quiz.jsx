@@ -101,7 +101,7 @@ class Quiz extends React.Component {
           className="eligibility__button"
           onClick={this.openModal}
         >
-          Take the Eligibility Quiz
+          Are You Eligible?
         </button>
         {this.state.isModalOpen && (
           <div className="quiz">
