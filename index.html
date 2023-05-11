@@ -28,17 +28,222 @@
   </script>
 </head>
 <body>
-  <ul>
-    <li><a href="/home.html">Home</a></li>
-    <li><a href="/interior.html">Interior</a></li>
-    <li><a href="/interior-landing.html">Interior-landing</a></li>
-  </ul>
 
+  <div id="alert"></div>
+ <div id="header" class="header"></div>
+  <div class="hero">
+    <div class="hero__background">
+      <div id="background-image" class="hero__background-media"></div>
+    </div>
+    
   
 
 
 
-  
+</div>
+
+
+
+
+<main>
+  <section class="page-intro">
+    <div class="page-intro__wrapper">
+      <h1 class="page-intro__headline">Headline</h1>
+      <p class="page-intro__supporting-text">Our mission is to promote public safety and support the firefighting community by providing accurate, up-to-date information and resources, enforcing fire safety standards, and fostering collaboration between agencies and organizations. We are committed to protecting lives and property, and working tirelessly to prevent and mitigate the impacts of fires in our state.</p>
+      <div class="button">Learn More</div>
+    </div>
+    
+  </section>
+
+  <section>
+    <div class="link-cards__wrapper">
+      <div class="link-cards">
+        <div class="link-card">
+          <div class="link-card-inner">
+            <div class="link-card__media"><img src=""/></div>
+            <div class="link-card__content">
+              <div class="link-card__title">Card Title</div>
+              <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+              <div class="button">Learn More</div>
+            </div>
+          </div>
+        </div>
+        <div class="link-card">
+          <div class="link-card-inner">
+            <div class="link-card__media"><img src=""/></div>
+            <div class="link-card__content">
+              <div class="link-card__title">Card Title</div>
+              <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+              <div class="button">Learn More</div>
+            </div>
+          </div>
+        </div>
+        <div class="link-card">
+          <div class="link-card-inner">
+            <div class="link-card__media"><img src=""/></div>
+            <div class="link-card__content">
+              <div class="link-card__title">Card Title</div>
+              <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+              <div class="button">Learn More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="link-cards__wrapper">
+      <div class="link-cards__header">
+       <div class="link-cards__title">Recent News</div>
+       <div><div class="button button--text">Browse All News Stories</div></div>
+     </div>
+     <div class="link-cards">
+      <div class="link-card">
+        <div class="link-card-inner">
+          <div class="link-card__media"><img src=""/></div>
+          <div class="link-card__content">
+            <div class="link-card__title">Card Title</div>
+            <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+            <div class="button">Learn More</div>
+          </div>
+        </div>
+      </div>
+      <div class="link-card">
+        <div class="link-card-inner">
+          <div class="link-card__media"><img src=""/></div>
+          <div class="link-card__content">
+            <div class="link-card__title">Card Title</div>
+            <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+            <div class="button">Learn More</div>
+          </div>
+        </div>
+      </div>
+      <div class="link-card">
+        <div class="link-card-inner">
+          <div class="link-card__media"><img src=""/></div>
+          <div class="link-card__content">
+            <div class="link-card__title">Card Title</div>
+            <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+            <div class="button">Learn More</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+
+  <div class="link-cards__wrapper">
+   <div class="link-cards__header">
+     <div class="link-cards__title">Upcoming Events</div>
+     <div><div class="button button--text">Browse All Events</div></div>
+   </div>
+   <div class="link-cards">
+    <div class="link-card">
+      <div class="link-card-inner">
+      
+        <div class="link-card__content">
+          <div class="link-card__title">Card Title</div>
+          <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
+    </div>
+    <div class="link-card">
+      <div class="link-card-inner">
+      
+        <div class="link-card__content">
+          <div class="link-card__title">Card Title</div>
+          <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
+    </div>
+    <div class="link-card">
+      <div class="link-card-inner">
+
+        <div class="link-card__content">
+          <div class="link-card__title">Card Title</div>
+          <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur. Nunc tortor iaculis massa venenatis faucibus.</div>
+          <div class="button">Learn More</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+</main>
+
+
+<div id="footer"></div>
+
+
+
+  <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+
+  <script>
+
+    const searchToggle = document.getElementById("search-toggle");
+    const search = document.querySelector(".search");
+    searchToggle.addEventListener ("click", () => {
+      search.classList.toggle("active");
+    });
+
+    
+
+    const heroSlider = document.querySelector('.hero-slider');
+    const flickity = new Flickity(heroSlider, {
+      prevNextButtons: false,
+      pageDots: false
+    });
+
+    
+
+// Update slide counter
+    const slideCount = document.querySelector('.hero-slider-counter');
+    slideCount.textContent = `1 / ${flickity.slides.length}`;
+
+// Update slide counter and navigation buttons on change
+    flickity.on('change', index => {
+  // Update slide counter
+      slideCount.textContent = `${index + 1} / ${flickity.slides.length}`;
+
+  // Enable/disable navigation buttons
+      const prevButton = document.querySelector('.slider-prev');
+      const nextButton = document.querySelector('.slider-next');
+      prevButton.disabled = index === 0;
+      nextButton.disabled = index === flickity.slides.length - 1;
+    });
+
+// Add click event listeners to navigation buttons
+    const prevButton = document.querySelector('.slider-prev');
+    const nextButton = document.querySelector('.slider-next');
+    prevButton.addEventListener('click', () => flickity.previous());
+    nextButton.addEventListener('click', () => flickity.next());
+
+// Get reference to the bg image element
+    const bgImage = document.getElementById('background-image');
+
+// Define array of background image URLs
+    const bgImageUrls = [
+      'url(https://images.unsplash.com/photo-1575507371089-cd0a12c5aae9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80)',
+      'url(path/to/second/image)',
+      'url(https://images.unsplash.com/photo-1575507371089-cd0a12c5aae9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80)',
+  // Add more URLs as needed for additional slides
+      ];
+
+// Update bg image based on active slide index
+    flickity.on('change', index => {
+      bgImage.style.backgroundImage = bgImageUrls[index] || 'none';
+    });
+
+  </script>
 
   <script type="module" src="/src/main.jsx"></script>
 </body>
