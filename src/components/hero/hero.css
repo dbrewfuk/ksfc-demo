@@ -1,13 +1,102 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: var(--c-neutral-3);
+}
+
+.hero__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__background:before {
+  content: "";
+  position: absolute;
+  top; 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+}
+
+.hero__background:after {
+  content: "";
+  position: absolute;
+  top; 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, transparent, rgba(0,0,0,0.5));
+}
+
 .hero__wrapper {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(1, 1fr);
 }
 
+.hero__content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero__content__wrapper {
+  height: 100%;
+    width: 100%;
+  padding: 32px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.arrows {
+  color: white;
+  align-self: flex-end;
+  display: flex;
+  gap: var(--s3);
+  align-items: center;
+
+}
+
+.slider-prev, .slider-next {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+}
+
+.arrows svg {
+  height: 32px;
+  width: 32px;
+}
+
+@media screen and (min-width: 1366px){
+  .hero__content__wrapper {
+  padding: 64px 96px;
+}
+}
+
 .hero__headline {
-  font-size: var(--f7);
-  margin-bottom: 24px;
-  font-family: var(--tf3);
+  font-size: var(--f6);
+  margin-bottom: var(--s3);
+  color: white;
+}
+
+@media screen and (min-width: 1366px){
+  .hero__headline {
+    font-size: var(--f9);
+  }
 }
 
 .hero__subheadline {
@@ -106,3 +195,25 @@
   border: solid 10px white;
   border-radius: 100vw;
 }
+
+.hero-slide {
+  width: 100%;
+  position: absolute;
+}
+
+.hero__background-media {
+  opacity: 0;
+  transition: ease all 0.3s;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  visibility: hidden;
+}
+
+.hero__background-media.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+

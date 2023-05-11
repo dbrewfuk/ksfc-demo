@@ -1,0 +1,16 @@
+.resources-search {
+	border-bottom: solid 1px var(--c-neutral-5);
+}
+
+.resources-search__wrapper {
+	padding: 96px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.resources-search__headline {
+	font-size: var(--f6);
+	margin-bottom: var(--s4);
+}

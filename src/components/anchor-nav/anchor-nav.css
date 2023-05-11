@@ -1,0 +1,19 @@
+.anchor-nav {
+
+}
+
+.anchor-nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.anchor-nav__list__item {
+}
+
+.anchor-nav__list__link {
+	display: inline-block;
+	padding-bottom: var(--s1);
+	border-bottom: solid 1px var(--c-neutral-5);
+	margin-bottom: var(--s2);
+}

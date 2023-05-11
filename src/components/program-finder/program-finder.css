@@ -60,12 +60,12 @@
 }
 
 .program-card__meta {
-  font-size: var(--f2);
+  font-size: var(--fs2);
   margin-bottom: var(--s2);
 }
 
 .program-card__title {
-  font-size: var(--f4);
+  font-size: var(--fs4);
   margin-bottom: var(--s3);
 }
 
@@ -83,7 +83,7 @@
   border: solid 1px var(--c-neutral-);
   display: inline-block;
   margin-bottom: var(--s5);
-  font-size: var(--f1);
+  font-size: var(--fs1);
   color: var(--c-primary);
   border: solid 1px var(--c-neutral-5);
   align-items: center;
@@ -109,7 +109,7 @@
   background: var(--c-primary);
   color: white;
   border-radius: 1000vw;
-  font-size: var(--f2);
+  font-size: var(--fs2);
   border: solid 2px var(--c-primary);
   cursor: pointer;
   transition: ease all 0.3s;
@@ -130,7 +130,7 @@
   color: var(--c-primary);
   border-radius: 1000vw;
   display: inline-block;
-  font-size: var(--f2);
+  font-size: var(--fs2);
   cursor: pointer;
   font-weight:500;
   transition:ease all 0.3s;
@@ -180,7 +180,7 @@
 }
 
 .chip {
-  font-size: var(--f2) !important;
+  font-size: var(--fs2) !important;
   padding: 12px 16px !important;
   border-radius: 100vw !important;
   height: auto !important;
@@ -190,7 +190,7 @@
 
 .program-finder__headline {
   text-align: center;
-  font-size: var(--f6);
+  font-size: var(--fs6);
 }
 
 @media (min-width:480px){

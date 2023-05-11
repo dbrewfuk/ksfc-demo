@@ -66,33 +66,7 @@
   vertical-align: middle;
 }
 
-.button {
-  display: inline-block;
-  width: 300px;
-  width: 18.75rem;
-  max-width: 100%;
-  padding: 0.78125rem 2rem;
-  border: 0.125rem solid #00467f;
-  border-radius: 2.65625rem;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
-  background-color: #00467f;
-  color: #fff;
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.55;
-  text-align: center;
-  text-decoration: none;
-}
 
-.button:hover {
-  border-width: 0.125rem;
-  background-color: #fff;
-  color: #00467f;
-}
 
 .grid-container {
   width: 100%;
@@ -141,4 +115,20 @@
 
 .grid--flush {
   margin-bottom: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+}
+
+formfield {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+label {
+  color: white;
 }

@@ -29,7 +29,7 @@
 }
 
 .pull-quote {
-  font-size: var(--f5);
+  font-size: var(--fs5);
   text-align: center;
   margin-bottom: 64px;
 }
@@ -50,7 +50,7 @@
 }
 
 cite {
-  font-size: var(--f2);
+  font-size: var(--fs2);
   color: var(--c-primary);
   font-family: var(--tf3);
   font-style: normal;
@@ -58,10 +58,10 @@ cite {
 
 @media screen and (min-width: 480px) {
   .pull-quote__content {
-    font-size: var(--f6);
+    font-size: var(--fs6);
   }
   cite {
-    font-size: var(--f3);
+    font-size: var(--fs3);
   }
   .video-container {
     padding-bottom: 56.25%;

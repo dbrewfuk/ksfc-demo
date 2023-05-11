@@ -1,11 +1,21 @@
 .footer {
   padding: 96px 0;
+  background: var(--c-neutral-10);
 }
 
 .footer__wrapper {
+  padding: 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: var(--s5);
+}
+
+@media screen and (min-width: 480px) {
+  .footer__wrapper {
+    padding: 96px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__left,
@@ -32,6 +42,12 @@
   width: 100%;
   height: 500px;
   border: solid 1px;
+}
+
+.footer__flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -63,3 +79,121 @@
 .legal__link {
   color: inherit;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__nav__flex {
+  display: flex;
+  gap: 56px;
+  flex-direction: column;
+}
+
+
+@media screen and (min-width: 1366px){
+  .footer__nav__flex  {
+    flex-direction: row;
+  }
+}
+
+
+
+.footer__address {
+  color: white;
+}
+
+.footer__address dd {
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav__lists__flex {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1366px){
+  .footer__nav__lists__flex  {
+    flex-direction: row;
+  }
+}
+
+
+.footer__nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list__title {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.footer__nav__list li a {
+  color: white;
+}
+
+.footer__footer {
+  background: black;
+  padding: 32px;
+}
+
+.footer__flex {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1366px){
+  .footer__flex {
+    flex-direction: row;
+  }
+}
+
+.footer__copyright {
+  color: white;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1366px){
+  .footer__copyright {
+    margin-bottom: 0;
+  }
+}
+
+.footer__cta {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+  color: white;
+}
+
+
+@media screen and (min-width: 1366px){
+.footer__form {
+  width: 33.333%;
+}
+}
+
+.footer__form__headline {
+  font-size: var(--f5);
+  color: white;
+  margin-bottom: var(--s3);
+}
+

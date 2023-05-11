@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KSFC Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity-fade@2/flickity-fade.css">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50033302-4"></script>
+
+  <script>
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){dataLayer.push(arguments);}
+
+    gtag('js', new Date());
+
+
+
+    gtag('config', 'UA-50033302-4');
+
+  </script>
+</head>
+<style>
+	.hero-slide {
+		width: 100%;
+		transition: ease all 0.3s;
+		opacity: 0;
+	}
+	.hero-slide.is-selected {
+		opacity: 1;
+	}
+	.flickity-viewport {
+		overflow: visible;
+	}
+	</style>
+<body>
+
+  <div class="hero">
+    <div class="hero__background">
+      <div id="background-image" class="hero__background-media"></div>
+    </div>
+    
+    
+
+    <div class="hero__content">
+
+    
+        
+        
+          
+          <div class="hero__content__wrapper">
+           
+           <div class="hero-slider">
+            
+            <div class="hero-slide">
+          <div class="hero-slide__content">
+                <h1 class="hero__headline">Hero Headline 1</h1>
+                <div class="button">Learn More</div>
+     </div>
+            </div>
+
+            <div class="hero-slide">
+            <div class="hero-slide__content">
+                <h1 class="hero__headline">Hero Headline 2</h1>
+                <div class="button">Learn More</div>
+   </div>
+            </div>
+
+            <div class="hero-slide">
+       <div id="hero-slide__content">
+                <h1 class="hero__headline">Hero Headline 3</h1>
+                <div class="button">Learn More</div>
+      </div>
+            </div>
+
+          </div>
+
+          <div class="arrows">
+           <div class="slider-prev"> <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_135_19)">
+<path d="M40 22H15.66L26.83 10.83L24 7.99997L8 24L24 40L26.83 37.17L15.66 26H40V22Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_135_19">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg></div>
+           <div class="hero-slider-counter"></div>
+           <div class="slider-next"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_135_13)">
+<path d="M24 7.99997L21.17 10.83L32.34 22H8V26H32.34L21.17 37.17L24 40L40 24L24 7.99997Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_135_13">
+<rect width="48" height="48" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</div>
+         </div>
+
+       </div>
+
+  
+ 
+ </div>
+
+</div>
+
+  <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/flickity-fade@2/flickity-fade.js"></script>
+
+
+  <script>
+
+window.addEventListener('load', function(event) {
+    flickity.resize();
+});
+
+   
+
+   
+
+    const heroSlider = document.querySelector('.hero-slider');
+    
+
+
+
+    const flickity = new Flickity(heroSlider, {
+    	fade: true,
+    	lasyLoad: true,
+      prevNextButtons: false,
+      pageDots: false,
+      adaptiveHeight: true,
+      selectedAttraction: 0.015,
+      wrapAround: true
+      
+    });
+
+    
+// Update slide counter
+    const slideCount = document.querySelector('.hero-slider-counter');
+    slideCount.textContent = `1 / ${flickity.slides.length}`;
+
+
+
+// Update slide counter and navigation buttons on change
+    flickity.on('change', index => {
+  // Update slide counter
+      slideCount.textContent = `${index + 1} / ${flickity.slides.length}`;
+      bgImage.style.backgroundImage = bgImageUrls[index] || 'none';
+      bgImage.classList.add('is-active');
+
+
+      const slideContent = document.getElementById('hero-slide__content');
+
+      slideContent.classList.remove('is-active');
+      setTimeout(function() {
+    slideContent.classList.add('is-active');
+  }, 1000);
+
+
+
+  // Enable/disable navigation buttons
+      const prevButton = document.querySelector('.slider-prev');
+      const nextButton = document.querySelector('.slider-next');
+      prevButton.disabled = index === 0;
+      nextButton.disabled = index === flickity.slides.length - 1;
+      flickity.resize()
+    });
+
+
+// Add click event listeners to navigation buttons
+    const prevButton = document.querySelector('.slider-prev');
+    const nextButton = document.querySelector('.slider-next');
+    prevButton.addEventListener('click', () => flickity.previous());
+    nextButton.addEventListener('click', () => flickity.next());
+
+// Get reference to the bg image element
+    const bgImage = document.getElementById('background-image');
+
+// Define array of background image URLs
+    const bgImageUrls = [
+      'url(https://images.unsplash.com/photo-1575507371089-cd0a12c5aae9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80)',
+      'url(path/to/second/image)',
+      'url(https://images.unsplash.com/photo-1575507371089-cd0a12c5aae9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80)',
+  // Add more URLs as needed for additional slides
+      ];
+
+
+
+
+
+
+
+  </script>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
