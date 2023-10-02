@@ -8,7 +8,11 @@
 @media screen and (min-width: 1366px){
 	.link-cards {
 		flex-direction: row;
-		margin-bottom: 32px;
+		flex-wrap: wrap;
+		
+	}
+	.link-card {
+		flex: 0 0 calc(33.333% - 32px);
 	}
 }
 

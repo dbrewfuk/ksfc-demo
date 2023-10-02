@@ -14,3 +14,7 @@
 	font-size: var(--f6);
 	margin-bottom: var(--s4);
 }
+
+.resources-search input {
+	height: 32px;
+}

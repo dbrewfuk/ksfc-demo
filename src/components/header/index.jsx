@@ -5,7 +5,8 @@ class Header extends React.Component {
 constructor(props) {
   super(props);
   this.state = {
-    isOpen: false
+    isOpen: false,
+    searchIsOpen: false
   };
 
   this.toggleMenu = this.toggleMenu.bind(this);
@@ -17,10 +18,18 @@ toggleMenu() {
   this.setState({ isOpen: !this.state.isOpen })
 }
 
+closeSearch = () =>   {
+  this.setState({ searchIsOpen: false })
+}
+
+openSearch = () => {
+  this.setState({ searchIsOpen: true })
+}
 
 
   render() {
     const { isOpen } = this.state;
+    const { searchIsOpen } = this.state;
     
   return (
 
@@ -95,9 +104,14 @@ toggleMenu() {
               </ul>
             </div>
             <div class="header__utility-nav__flex__flex-item">
-              <div class="header__utility-nav__search">
-                <span id="search-toggle">Search</span>
+              <div className="header__utility-nav__search">
+                <span className="search-icon" onClick={this.openSearch}>Search</span>
+                {this.state.searchIsOpen && (
+                <div class="search__wrapper">
                 <input/>
+                <span class="close-icon" id="search-close" onClick={this.closeSearch}>Close</span>
+                </div>
+                )}
               </div>
             </div>
           </div>
@@ -119,7 +133,9 @@ toggleMenu() {
             </div>
             <div class="header__primary-nav__grid__grid-item">
               <div class="header-logo">
+              <a href="/">
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="white"/><circle cx="40" cy="40" r="8" fill="white"/></svg>
+                </a>
               </div>
             </div>
             <div class="header__grid__grid-item">

@@ -5,6 +5,7 @@ import Footer from "./components/footer/index.jsx";
 import SectionNav from "./components/section-nav/index.jsx";
 import Alert from "./components/alert/index.jsx";
 import MobileNav from "./components/mobile-nav/index.jsx";
+import Search from "./components/search/index.jsx";
 import "./components/base.css";
 import "./components/footer/footer.css";
 import "./components/header/header.css";
@@ -23,11 +24,15 @@ import "./components/link-card.css";
 import "./components/resources-search.css";
 import "./components/button.css";
 
+
 ReactDOM.render(React.createElement(Alert), document.getElementById("alert"));
 ReactDOM.render(React.createElement(Header), document.getElementById("header"));
 ReactDOM.render(React.createElement(Footer), document.getElementById("footer"));
+ReactDOM.render(React.createElement(Search), document.getElementById("search"));
 ReactDOM.render(React.createElement(SectionNav), document.getElementById("section-nav"));
 ReactDOM.render(React.createElement(MobileNav), document.getElementById("mobile-nav"));
+
+
 
 const searchToggle = document.getElementById("search-toggle");
 searchToggle.addEventListener ("click", () => {

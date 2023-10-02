@@ -3,7 +3,7 @@ import React, { useState } from "react";
 class SectionNav extends React.Component {
   render() {
   return (
-
+<>
 <div class="section-nav">
   <div class="section-nav__wrapper">
   <ul class="section-nav__list">
@@ -13,6 +13,7 @@ class SectionNav extends React.Component {
       </ul>
     </div>
 </div>
+</>
 )}
 }
 

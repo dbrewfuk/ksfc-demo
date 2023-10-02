@@ -6,6 +6,10 @@
   display: none;
 }
 
+.header--no-hero .header--large {
+  position: relative;
+}
+
 .header--mobile {
   background: var(--c-primary);
 }

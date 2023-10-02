@@ -22,6 +22,7 @@ class MobileNav extends React.Component {
 
 
   return (
+    <>
 	<div>
 
 {this.state.isMobileNavOpen && (
@@ -47,6 +48,7 @@ class MobileNav extends React.Component {
   
   )}
 	</div>
+  </>
 
 )
 }

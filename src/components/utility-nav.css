@@ -15,7 +15,7 @@
 .header__utility-nav__wrapper {
 	display: flex;
 	justify-content: flex-end;
-	padding: 32px;
+	padding: 0 32px;
 }
 
 .header__utility-nav__flex {
@@ -37,8 +37,9 @@
 
 }
 
-.header__utility-nav__list__link {
-
+.header__utility-nav__link {
+	display: inline-block;
+	padding: 32px 0;
 }
 
 .header__utility-nav__search {
@@ -46,10 +47,20 @@
 	gap: var(--s3);
 }
 
+.header__utility-nav__search span {
+	padding: 32px 0;
+}
+
 .header__utility-nav__search input {
-	display: none;
+	height: 32px;
 }
 
 .header__utility-nav__search.active input{
 	display: block;
+}
+
+.search__wrapper {
+	display: flex;
+	gap: 16px;
+	align-items: center;
 }
