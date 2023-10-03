@@ -1,6 +1,7 @@
 @font-face {
   font-family: "destroyregular";
-  src: url("/src/assets/fonts/destroy-webfont.woff2") format("woff2"),
+  src:
+    url("/src/assets/fonts/destroy-webfont.woff2") format("woff2"),
     url("/src/assets/fonts/destroy-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -8,8 +9,7 @@
 
 :root {
   --c-primary: black;
-  --c-secondary: white
-  --c-tertiary: #fafafa;
+  --c-secondary: white --c-tertiary: #fafafa;
 
   --c-primary-0: ;
   --c-primary-1: ;
@@ -112,10 +112,10 @@ body * {
   font-size: var(--f2);
 }
 
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1366px) {
   body * {
-  font-size: var(--f3);
-}
+    font-size: var(--f3);
+  }
 }
 
 h1,
@@ -169,13 +169,11 @@ a {
   max-width: 1366px;
 }
 
-
 @media screen and (min-width: 720px) {
 }
 
 @media screen and (min-width: 1024px) {
 }
-
 
 h1 {
   font-size: var(--f6);
@@ -190,4 +188,95 @@ h3 {
 
 p {
   font-size: var(--f3);
+}
+
+article p {
+  margin-bottom: 1.5rem;
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+.link-cards__headline {
+  margin-bottom: 3rem;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-container th,
+.table-container td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .table-container table {
+    display: block;
+  }
+  .table-container thead {
+    display: none;
+  }
+  .table-container tr {
+    margin-bottom: 12px;
+    display: block;
+  }
+  .table-container td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    margin-right: 4%;
+    text-align: right;
+  }
+}
+
+.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin-bottom: 0;
+}
+
+.accordion:first-child {
+  border-top: solid 1px rgba(0, 0, 0, 0.15);
+}
+.accordion.active {
+  background-color: black;
+  color: white;
+}
+.accordion .grow-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.accordion.active .grow-icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+.panel {
+  padding: 24px 16px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.last-accordion {
+  border-bottom: none;
+}
+@media screen and (max-width: 600px) {
+  .accordion {
+    font-size: 14px;
+  }
 }

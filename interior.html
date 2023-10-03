@@ -28,17 +28,8 @@
 </head>
 <body>
      <div id="alert"></div>
-     <div id="header" class="header"></div>
-  <div class="hero">
-    <div class="hero__background">
-      <div id="background-image" class="hero__background-media"></div>
-    </div>
-    
-
-
-
-
-</div>
+     <div id="header" class="header header--no-hero"></div>
+ 
 
 <div id="section-nav"></div>
 
@@ -48,10 +39,7 @@
     <div class="page-intro__wrapper">
       <h1 class="page-intro__headline">Headline</h1>
       <p class="page-intro__supporting-text">Our mission is to promote public safety and support the firefighting community by providing accurate, up-to-date information and resources, enforcing fire safety standards, and fostering collaboration between agencies and organizations. We are committed to protecting lives and property, and working tirelessly to prevent and mitigate the impacts of fires in our state.</p>
-      <div class="page-intro__button-group">
-        <div class="button">Learn More</div>
-        <div class="button--text">Fire Safety Prevention Manual <span>PDF, 4 MB</span></div>
-      </div>
+     
     </div>
     
   </section>
@@ -76,7 +64,17 @@
           <h1>Heading 1</h1>
           <p>Vitae arcu sit nam egestas cursus eu dignissim metus. Lacus vitae vestibulum ut quis ut amet. Imperdiet sem commodo vitae felis consectetur mauris ultrices nec. Etiam vel consectetur gravida aliquam nullam volutpat. In arcu nam nulla sit. Vulputate dignissim nec nunc sem non.</p>
           <p>Vitae arcu sit nam egestas cursus eu dignissim metus. Lacus vitae vestibulum ut quis ut amet. Imperdiet sem commodo vitae felis consectetur mauris ultrices nec. Etiam vel consectetur gravida aliquam nullam volutpat. In arcu nam nulla sit. Vulputate dignissim nec nunc sem non.</p>
-          
+          <div style="margin: 2rem 0;">
+          <div class="link-card">
+            <a class="link-card-inner" href="https://kyfirecommission.kctcs.edu/about/Forms/KCTCS%20Sub%20W9%20Sep%202023%20Fillable.pdf">
+              <div class="link-card__content">
+                <div class="link-card__title">KCTCS Sub W-9 Form (Fillable Field PDF) <span class="file-meta">[PDF, 1MB]</span>
+                </div>
+                <div class="link-card__supporting-text">Lorem ipsum dolor sit amet consectetur.</div>
+              </div>
+            </a>
+          </div>
+          </div>
           <h2>Heading 2</h2>
           <p>Vitae arcu sit nam egestas cursus eu dignissim metus. Lacus vitae vestibulum ut quis ut amet. Imperdiet sem commodo vitae felis consectetur mauris ultrices nec. Etiam vel consectetur gravida aliquam nullam volutpat. In arcu nam nulla sit. Vulputate dignissim nec nunc sem non.</p>
           <ul class="article__list">
@@ -87,10 +85,54 @@
       </ul>
           <h3>Heading 3</h3>
           <p>Vitae arcu sit nam egestas cursus eu dignissim metus. Lacus vitae vestibulum ut quis ut amet. Imperdiet sem commodo vitae felis consectetur mauris ultrices nec. Etiam vel consectetur gravida aliquam nullam volutpat. In arcu nam nulla sit. Vulputate dignissim nec nunc sem non.</p>
-          <div class="article__button"><div class="button">Learn More</div></div>
+          <div style="margin: 2rem 0;">
+          
+            <button class="accordion">Accordion Item 1</button>
+    <div class="panel">
+      <p>This is the content for the accordion item.</p>
+    </div>
+    <button class="accordion">Accordion Item 2</button>
+    <div class="panel">
+      <p>This is the content for the accordion item.</p>
+    </div>
+    <button class="accordion">Accordion Item 3</button>
+    <div class="panel">
+      <p>This is the content for the accordion item.</p>
+    </div>
+    <button class="accordion">Accordion Item 4</button>
+    <div class="panel">
+      <p>This is the content for the accordion item.</p>
+    </div>
+  </div>
           <h4>Heading 4</h4>
           <p>Vitae arcu sit nam egestas cursus eu dignissim metus. Lacus vitae vestibulum ut quis ut amet. Imperdiet sem commodo vitae felis consectetur mauris ultrices nec. Etiam vel consectetur gravida aliquam nullam volutpat. In arcu nam nulla sit. Vulputate dignissim nec nunc sem non.</p>
-          <div class="article__button"><div class="button--text">Fire Safety Prevention Manual <span>PDF, 4 MB</span></div></div>
+          
+          
+          
+          
+          <div style="margin-top: 2rem;">
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Table Heading</th>
+                  <th>Table Heading</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-th="Link Category">Table Content</td>
+                  <td data-th="Link">Table Content</td>
+                </tr>
+                <tr>
+                  <td data-th="Link Category">Table Content</td>
+                  <td data-th="Link">Table Content</td>
+                </tr>
+                <!-- Repeat the tr and td elements for other rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -110,7 +152,22 @@
 
 
 
-
+<script>
+  var accordions = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < accordions.length; i++) {
+    accordions[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
 <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
