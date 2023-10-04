@@ -164,7 +164,10 @@ class Header extends React.Component {
                       </a>
                     </li>
                     <li class="header__utility-nav__list-item">
-                      <a class="header__utility-nav__link" href="/search.html">
+                      <a
+                        class="header__utility-nav__link"
+                        href="/resources.html"
+                      >
                         Resources
                       </a>
                     </li>
