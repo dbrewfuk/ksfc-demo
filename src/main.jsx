@@ -6,7 +6,9 @@ import SectionNav from "./components/section-nav/index.jsx";
 import Alert from "./components/alert/index.jsx";
 import MobileNav from "./components/mobile-nav/index.jsx";
 import Search from "./components/search/index.jsx";
-import MyAccordion from "./components/accordion/accordion.jsx";
+import AnchorList from "./components/anchor-list.jsx";
+import Accordion from "./components/accordion/accordion.jsx";
+import "./js/main.js";
 import "./components/accordion/accordion.css";
 import "./components/base.css";
 import "./components/footer/footer.css";
@@ -21,26 +23,33 @@ import "./components/section-nav/section-nav.css";
 import "./components/anchor-nav/anchor-nav.css";
 import "./components/l-two-column.css";
 import "./components/page-intro.css";
-import "./components/utility-nav.css";
 import "./components/link-card.css";
 import "./components/resources-search.css";
 import "./components/button.css";
+import "./components/anchor-list.css";
+import "./components/toc.css";
 
 ReactDOM.render(React.createElement(Alert), document.getElementById("alert"));
 ReactDOM.render(React.createElement(Header), document.getElementById("header"));
 ReactDOM.render(React.createElement(Footer), document.getElementById("footer"));
 ReactDOM.render(React.createElement(Search), document.getElementById("search"));
+
+ReactDOM.render(
+  React.createElement(AnchorList),
+  document.getElementById("anchor-list")
+);
+
 ReactDOM.render(
   React.createElement(MyAccordion),
-  document.getElementById("accordion"),
+  document.getElementById("accordion")
 );
 ReactDOM.render(
   React.createElement(SectionNav),
-  document.getElementById("section-nav"),
+  document.getElementById("section-nav")
 );
 ReactDOM.render(
   React.createElement(MobileNav),
-  document.getElementById("mobile-nav"),
+  document.getElementById("mobile-nav")
 );
 
 const searchToggle = document.getElementById("search-toggle");

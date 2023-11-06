@@ -1,0 +1,26 @@
+.anchor-list__title {
+  font-size: var(--f2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--c-primary);
+}
+
+.anchor-list__dropdown {
+  margin: 0;
+  padding: 0;
+}
+
+.anchor-list__dropdown li a {
+  padding: var(--s2) var(--s4) var(--s2) 0;
+  display: inline-block;
+}
+
+.anchor-list__item.active {
+  display: block;
+  font-weight: 600;
+}
+
+.anchor-list__item.active svg {
+  display: block;
+}

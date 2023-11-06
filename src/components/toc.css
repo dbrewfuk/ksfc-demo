@@ -1,0 +1,87 @@
+@media screen and (min-width: 1024px) {
+  .dn {
+    display: none;
+  }
+}
+
+
+.toc {
+  position: sticky;
+  position -webkit-sticky;
+  display: none;
+
+}
+
+.sidebar {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+
+.toc__title {
+  font-size: var(--f2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--c-primary);
+  padding-top: var(--s3);
+  border-top: solid 6px var(--c-accent);
+  margin-bottom: var(--s3);
+}
+
+.toc__list {
+  list-style: none;
+  margin: 0 0 var(--s4) 0;
+  padding: 0;
+
+}
+
+.toc__list__item {
+  display: flex;
+  gap: var(--s3);
+  align-items: center;
+  color: var(--c-primary);
+}
+
+.toc__list__item.active {
+  font-weight: 600;
+}
+
+.toc__list__item:before {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: var(--c-accent);
+  border-radius: 100vw;
+
+}
+
+.toc__list__item.active:before {
+  display: block;
+}
+
+
+.toc__dropdown {
+  margin: 0;
+  padding: 0;
+}
+
+.toc__dropdown li a {
+  padding: var(--s2) var(--s4) var(--s2) 0;
+  display: inline-block;
+}
+
+.toc__item.active {
+  display: block;
+  font-weight: 600;
+}
+
+.toc__item.active svg {
+  display: block;
+}

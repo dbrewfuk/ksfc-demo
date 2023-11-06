@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "destroyregular";
   src: url("/src/assets/fonts/destroy-webfont.woff2") format("woff2"),
@@ -24,7 +20,7 @@
   --c-primary-6: ;
   --c-primary-7: ;
   --c-primary-8: ;
-  --c-primary-900: #02468a;
+  --c-primary-9: ;
   --c-primary-10: ;
 
   --c-secondary-0: ;
@@ -52,9 +48,9 @@
   --c-tertiary-10: ;
 
   --c-neutral-0: #ffffff;
-  --c-neutral-0\.5: #fefefe;
+  --c-neutral-0.5: #fefefe;
   --c-neutral-1: #fefefe;
-  --c-neutral-1\.5: #fdfdfd;
+  --c-neutral-1.5: #fdfdfd;
   --c-neutral-2: #fcfcfc;
   --c-neutral-3: #fafafa;
   --c-neutral-4: #f6f6f6;
@@ -181,25 +177,14 @@ a {
 @media screen and (min-width: 1024px) {
 }
 
-.f-display-1 {
-  font-size: var(--f8);
-}
-
-.f-display-2 {
-  font-size: var(--f7);
-}
-
-h1,
-.f-heading-1 {
+h1 {
   font-size: var(--f6);
 }
 
-h2,
-.f-heading-2 {
+h2 {
   font-size: var(--f5);
 }
-h3,
-.f-heading-3 {
+h3 {
   font-size: var(--f4);
 }
 
@@ -346,6 +331,11 @@ article h2 {
 
 .button--light svg path {
   fill: var(--c-primary);
+}
+
+.button--t-dark {
+  background: ;
+  color: ;
 }
 
 .button--icon {

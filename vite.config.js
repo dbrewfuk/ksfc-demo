@@ -2,7 +2,7 @@
 
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from "path";
+import path from "path";
 
 export default defineConfig({
   plugins: [react()],
@@ -10,14 +10,19 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: "assets",
+    resolve: {
+      alias: {
+        "~bootstrap": path.resolve(__dirname, "node_modules/bootstrap"),
+      },
+    },
     rollupOptions: {
       input: {
-        home: resolve(__dirname, "home.html"),
-        interior: resolve(__dirname, "interior.html"),
-        interiorLanding: resolve(__dirname, "interior-landing.html"),
-        resources: resolve(__dirname, "resources.html"),
-        rescueTraining: resolve(__dirname, "rescue-training.html"),
-        aboutUs: resolve(__dirname, "about-us.html"),
+        home: path.resolve(__dirname, "home.html"),
+        interior: path.resolve(__dirname, "interior.html"),
+        interiorLanding: path.resolve(__dirname, "interior-landing.html"),
+        resources: path.resolve(__dirname, "resources.html"),
+        rescueTraining: path.resolve(__dirname, "rescue-training.html"),
+        aboutUs: path.resolve(__dirname, "about-us.html"),
       },
     },
   },
